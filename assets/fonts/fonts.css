@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PT-Sans-Caption';
+      src:  url('PT-Sans-Caption.ttf.woff') format('woff'),
+      url('PT-Sans-Caption.ttf.svg#PT-Sans-Caption') format('svg'),
+      url('PT-Sans-Caption.ttf.eot'),
+      url('PT-Sans-Caption.eot?#iefix') format('embedded-opentype'); 
+      font-weight: normal;
+      font-style: normal;
+  }

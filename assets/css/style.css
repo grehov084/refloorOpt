@@ -1,1 +1,54 @@
-@import url(/assets/css/reset.css);
+@import url("reset.css");
+@import url("../fonts/fonts.css");
+:root{
+    --black: #1E1E1E;
+    --green: #A6B96D;
+}
+body{
+    font-family: 'PT-Sans-Caption';
+}
+.site{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
+}
+.site-header-top{
+    height: 40px;
+    background-color: var(--black);
+}
+.site-header-bottom{
+    padding-top: 20px;
+}
+.site-header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-menu-list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    gap: 40px;
+}
+.header-menu__item{
+    list-style-type: none;
+}
+.header-menu__link{
+    text-decoration: none;
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+.site-header-action{
+    color: #fff;
+    background-color: var(--green);
+    border-radius: 20px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
