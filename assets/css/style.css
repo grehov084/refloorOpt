@@ -1,7 +1,7 @@
 @import url("reset.css");
 @import url("../fonts/fonts.css");
 :root{
-    --black: #1E1E1E;
+    --black: rgb(30, 30, 30);
     --green: #A6B96D;
 }
 body{
@@ -51,4 +51,88 @@ body{
     border-radius: 20px;
     padding: 12px 24px;
     cursor: pointer;
+}
+.title{
+    font-weight: bold;
+    color: var(--black);
+    font-size: 56px;
+}
+.site-main-section:not(:last-child){
+    padding-bottom: 120px;
+}
+.site-main-business{
+    padding-top: 40px;
+}
+.business-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.business-item{
+    width: 100%;
+    max-width: 360px;
+    height: 600px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.title{
+    text-transform: uppercase;
+    font-size: 56px;
+    font-weight: 700;
+    font-family: "PTSansCaptionBold";
+}
+.business__title, .products__title{
+    margin-bottom: 30px;
+}
+.business-item__title{
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 26px;
+    font-weight: 700;
+    color: #fff;
+}
+.business-item{
+    background-size: cover;
+}
+.business-item--parthners{
+    background: url("../img/parthners.png");
+    background-size: 115%;
+    background-position: center;
+}
+.business-item--goods{
+    background: url("../img/goods.png");
+    background-position-x: -50px;
+}
+.business-item--manufactura{
+    background: url("../img/manufactura.png");
+    background-size: 120%;
+}
+.business-item--news{
+    background: url("../img/news.png");
+    background-size: 250%;
+    background-position: center;
+}
+.products-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px 0;
+}
+.products-item{
+    border: 2px solid #000;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 735px;
+    height: 600px;
+    display: flex;
+    align-items: end;
+}
+.products-item--qp{
+    max-width: 100%;
+}
+.products-item-content{
+    padding: 30px 20px;
 }

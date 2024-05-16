@@ -7,3 +7,12 @@
       font-weight: normal;
       font-style: normal;
   }
+ @font-face {
+  font-family: "PTSansCaptionBold";
+  src: url("PTSansCaptionBold.eot");
+  src: url("PTSansCaptionBold.eot?#iefix")format("embedded-opentype"),
+  url("PTSansCaptionBold.woff") format("woff"),
+  url("PTSansCaptionBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  }
