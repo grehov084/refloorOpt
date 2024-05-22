@@ -49,8 +49,10 @@ body{
     color: #fff;
     background-color: var(--green);
     border-radius: 20px;
+    border: 2px solid var(--green);
     padding: 12px 24px;
     cursor: pointer;
+    transition: 0.5s;
 }
 .title{
     font-weight: bold;
@@ -97,20 +99,20 @@ body{
     background-size: cover;
 }
 .business-item--parthners{
-    background: url("../img/parthners.png");
+    background-image: url("../img/parthners.png");
     background-size: 115%;
     background-position: center;
 }
 .business-item--goods{
-    background: url("../img/goods.png");
+    background-image: url("../img/goods.png");
     background-position-x: -50px;
 }
 .business-item--manufactura{
-    background: url("../img/manufactura.png");
+    background-image: url("../img/manufactura.png");
     background-size: 120%;
 }
 .business-item--news{
-    background: url("../img/news.png");
+    background-image: url("../img/news.png");
     background-size: 250%;
     background-position: center;
 }
@@ -129,6 +131,8 @@ body{
     display: flex;
     align-items: end;
     background-size: 100% !important;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
 }
 .products-item--qp{
     max-width: 100%;
@@ -144,7 +148,7 @@ body{
     display: flex;
     gap: 10px;
 }
-.products-item-collection__item{
+.products-item-collection__elem{
     text-transform: uppercase;
     color: #fff;
     font-weight: 400;
@@ -153,6 +157,7 @@ body{
     border: 1px solid #fff;
     border-radius: 100px;
     padding: 10px 20px;
+    transition: 0.5s;
 }
 .products-item-description{
     color: #fff;
@@ -166,23 +171,84 @@ body{
     font-family: "PTSansCaptionBold";
 }
 .products-item--pvh{
-    background: url("../img/tile.jpg");
+    background-image: url("../img/tile.jpg");
     background-position-y: -215px;
 }
 .products-item--fargo{
-    background: url("../img/fargo.jpg");
+    background-image: url("../img/fargo.jpg");
     background-size: 110% !important;
 }
 .products-item--qp{
-    background: url("../img/QP.jpg");
+    background-image: url("../img/QP.jpg");
     background-position-y: -260px;
 }
 .products-item--plintus{
-    background: url("../img/pllintus.jpg");
+    background-image: url("../img/pllintus.jpg");
     background-size: 122% !important;
     background-position-x: center;
 }
 .products-item--qplintus{
-    background: url("../img/quartzplintus.jpg");
+    background-image: url("../img/quartzplintus.jpg");
     background-position-y: -254px;
+}
+.site-main-partnership-content{
+    background-color: var(--black);
+    border-radius: 20px;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-main-partnership-title{
+    color: #fff;
+    line-height: 1.3;
+}
+.site-main-partnership-description{
+    color: #fff
+}
+.site-main-partnership-left{
+    max-width: 403px;
+}
+.site-main-partnership-right{
+    width: 100%;
+    max-width: 937px;
+    height: 481px;
+}
+.site-main-partnership-video{
+    width: inherit;
+    height: inherit;
+    background-image: url("../img/video-bg.png");
+    background-size: cover;
+    background-position-x: -170px;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.video-toggle{
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+@media screen {
+    .video-toggle:hover{
+        transform: scale(1.1);
+    }
+    .site-header-action:hover{
+        background-color: #fff;
+        color: var(--green);
+    }
+    .products-item-collection__elem:hover{
+        background-color: #fff;
+        color: var(--black);
+    }
+
 }
