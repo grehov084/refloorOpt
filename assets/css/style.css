@@ -71,6 +71,7 @@ body{
 .site-header-phone, .site-header-region{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .site-header-phone__val{
     font-weight: 700;
@@ -97,6 +98,15 @@ body{
     max-width: 360px;
     height: 600px;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    transition: 0.5s;
+}
+.business-item__link{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -518,5 +528,8 @@ body{
     .news-action:hover{
         background: var(--black);
         color: #fff;
+    }
+    .business-item:hover{
+        transform: scale(1.05);
     }
 }
