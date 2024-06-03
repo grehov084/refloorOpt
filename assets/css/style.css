@@ -770,6 +770,14 @@ body{
     .site-header-top{
         display: none;
     }
+    .site-header-region--mobile, .site-header-phone--mobile, .site-header-address--mobile{
+        padding-left: 10px;
+    }
+}
+@media(min-width: 530px){
+    .site-header-region--mobile, .site-header-phone--mobile, .site-header-address--mobile{
+        display: none;
+    }
 }
 @media(max-width: 500px){
     .site-footer-menu-list{
