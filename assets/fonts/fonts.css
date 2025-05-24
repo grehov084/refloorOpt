@@ -16,3 +16,21 @@
   font-style: normal;
   font-weight: 700;
   }
+ @font-face {
+  font-family: "JostRegular";
+  src: url("jost/Jost-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+ }
+ @font-face {
+  font-family: "JostBold";
+  src: url("jost/Jost-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+ }
+ @font-face {
+  font-family: "JostLignt";
+  src: url("jost/Jost-Light.ttf");
+  font-style: normal;
+  font-weight: normal;
+ }
