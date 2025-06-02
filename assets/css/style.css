@@ -627,6 +627,11 @@ body{
     font-size: 28px;
     color: #fff;
 }
+.site-footer-contacts-text,
+.site-footer-contacts-pic{
+    display: flex;
+    align-items: center;
+}
 @media screen {
     .btn:hover{
         background-color: var(--black);
